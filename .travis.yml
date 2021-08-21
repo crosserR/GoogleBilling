@@ -1,15 +1,17 @@
 language: android
 jdk:
-  - oraclejdk8
+  - oraclejdk11
 android:
   components:
     - tools
-    - build-tools-25.2.5
+    - build-tools-30.0.3
     - android-21
-    - android-25
+    - android-30
     - extra-android-m2repository
     - sys-img-armeabi-v7a-android-21
-
+before_install:
+  - echo yes | sdkmanager "build-tools;30.0.3"
+  - echo yes | sdkmanager "platforms;android-30"
 before_script:
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
   - emulator -avd test -no-audio -no-window &
