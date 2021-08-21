@@ -2,7 +2,7 @@
 Android, Google billing libs,with billingclient version 4.0.0
 
 
-# Android Google Billing Library [![Build Status](https://app.travis-ci.com/crosserR/GoogleBilling.svg?branch=master)](https://app.travis-ci.com/github/crosserR/GoogleBilling)  [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.v2cross.googlebilling/googlebillinglib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.v2cross.googlebilling/googlebillinglib)
+# Android Google Billing Library   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.v2cross.googlebilling/googlebillinglib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.v2cross.googlebilling/googlebillinglib)
 
 This is a simple, straight-forward implementation of the Android Google billingclient v4.0.0 API.
 
