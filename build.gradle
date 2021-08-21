@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        google()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:3.5.0"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.10.2"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+//
+//allprojects {
+//    apply plugin: "com.jfrog.artifactory"
+//}
+//
+//artifactory {
+//    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+//    publish {
+//        repository {
+//            repoKey = 'v2cross-gradle-dev-local'
+//            username = "${artifactory_user}"
+//            password = "${artifactory_password}"
+//            maven = true
+//
+//        }
+//    }
+//    resolve {
+//        repository {
+//            repoKey = 'v2cross-gradle-dev'
+//            username = "${artifactory_user}"
+//            password = "${artifactory_password}"
+//            maven = true
+//
+//        }
+//    }
+//}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
